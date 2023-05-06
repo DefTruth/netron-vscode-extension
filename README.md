@@ -15,12 +15,14 @@ NOTE: This extension is mainly for personal use, and I have no intensive develop
 - [ ] Optimize some UI components
 
 ## Install
-- Install `netron-vscode-extension` from VSCode marketplace.
+- Install `netron-vscode-extension` from VSCode marketplace. 
+![](docs/install.png)
 
 ## Usage
 
 - Click on a saved model to see the following.  
-![alt text](docs/example.gif)
+![](docs/example.gif) 
+![](docs/picodet.png)
 
 ## Build
 
