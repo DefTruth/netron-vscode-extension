@@ -213,14 +213,27 @@ export class ModelVisualizer implements vscode.CustomEditorProvider<ModelFile> {
 	) { 
 		ModelVisualizer.python.ex`
 		import sys
-		import netron
 		import platform
+		def install_deps():
+		  try:
+			  from pip._internal.cli.main import main
+			  main(['install', 'netron'])
+			  return '0'
+		  except:
+			  return '-1'
+
 		def vis_model(path):
+			import netron
 			if platform.system() == 'Windows':
 				path = path.lstrip('/')
 			addr, port = netron.start(path, browse=False)
 			return 'http://' + str(addr) + ':' + str(port)
 	`;
+  // install deps while extension init
+	ModelVisualizer.python`install_deps()`
+	.then((res) => { console.log(res); })
+	.catch((err) => { console.log(err); });
+	
 	}
 
 	//#region CustomEditorProvider

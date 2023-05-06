@@ -1,23 +1,23 @@
 # netron-vscode-extension
 
-A vscode extension for netron, support *.pdmodel, *.nb, *.onnx, *.pb, *.h5, *.tflite, *.pth, *.pt, *.mnn, *.tnnproto, *.param, etc. This code is based on [NetronInVSCode](https://github.com/chingweihsu0809/NetronInVSCode) but add more model format support, such as *.pdmodel, *.nb, *.mnn, *.param, *.tnnproto, etc.
+A vscode extension for netron, support *.pdmodel, *.nb, *.onnx, *.pb, *.h5, *.tflite, *.pth, *.pt, *.mnn, *.tnnproto, *.param, etc. This code is based on [NetronInVSCode](https://github.com/chingweihsu0809/NetronInVSCode) but adds more model format support, such as *.pdmodel, *.nb, *.mnn, *.param, *.tnnproto, etc.  
+
+NOTE: This extension is mainly for personal use, and I have no intensive development plans in the future.
+
 
 ## TODO 
 - [x] add *.pdmodel, *.nb, *.mnn, *.param, *.tnnproto format support
+- [x] remove manually `pip install` requirements
 - [ ] onnx-simplifier support
 - [ ] paddle2onnx converter support
 - [ ] x2paddle converter support
 - [ ] MNN converter support
-- [ ] Optimize some UI 
-
-## Requirements
-
-- `pip install netron`
+- [ ] Optimize some UI components
 
 ## Usage
 
 - Install `netron-vscode-extension` from VSCode marketplace.
-- Click on a saved model to see the following.
+- Click on a saved model to see the following.  
 ![alt text](documentation/example.gif)
 
 ## Running the code
