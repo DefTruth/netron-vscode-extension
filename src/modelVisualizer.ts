@@ -300,8 +300,8 @@ export class ModelVisualizer implements vscode.CustomEditorProvider<ModelFile> {
 			</head>
 			<body>
 				<iframe
-					width="800"
-					height="800" 
+					width="1200"
+					height="1600" 
 					src="${url}"
 				></iframe>
 			</body>

@@ -1,14 +1,14 @@
 {
-	"name": "netron-vscode",
-	"displayName": "Netron in VSCode",
-	"description": "Unofficial implmentation of visualizing ML Models in VSCode using Netron",
-	"version": "0.0.3",
-	"publisher": "chingweihsu0809",
+	"name": "netron-vscode-extension",
+	"displayName": "netron-vscode-extension",
+	"description": "Implmentation of visualizing ML Models in VSCode using Netron",
+	"version": "0.0.1",
+	"publisher": "DefTruth",
 	"private": true,
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chingweihsu0809/NetronInVSCode"
+		"url": "https://github.com/DefTruth/netron-vscode-extension.git"
 	},
 	"engines": {
 		"vscode": "^1.53.2"
@@ -25,25 +25,7 @@
 				"displayName": "Netron Plot",
 				"selector": [
 					{
-						"filenamePattern": "*.pt"
-					},
-					{
-						"filenamePattern": "*.pth"
-					},
-					{
-						"filenamePattern": "*.pb"
-					},
-					{
-						"filenamePattern": "*.mlmodel"
-					},
-					{
-						"filenamePattern": "*.tflite"
-					},
-					{
-						"filenamePattern": "*.onnx"
-					},
-					{
-						"filenamePattern": "*.h5"
+						"filenamePattern": "*.{pdmodel,nb,mnn,param,tnnproto,onnx,pb,pbtxt,h5,keras,mlmodel,caffemodel,prototxt,model,pt,pth,param,tflite,t7,cntk,meta}"
 					}
 				]
 			}
