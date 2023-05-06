@@ -1,0 +1,69 @@
+{
+	"name": "netron-vscode",
+	"displayName": "Netron in VSCode",
+	"description": "Unofficial implmentation of visualizing ML Models in VSCode using Netron",
+	"version": "0.0.3",
+	"publisher": "chingweihsu0809",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chingweihsu0809/NetronInVSCode"
+	},
+	"engines": {
+		"vscode": "^1.53.2"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "Netron.plot",
+				"displayName": "Netron Plot",
+				"selector": [
+					{
+						"filenamePattern": "*.pt"
+					},
+					{
+						"filenamePattern": "*.pth"
+					},
+					{
+						"filenamePattern": "*.pb"
+					},
+					{
+						"filenamePattern": "*.mlmodel"
+					},
+					{
+						"filenamePattern": "*.tflite"
+					},
+					{
+						"filenamePattern": "*.onnx"
+					},
+					{
+						"filenamePattern": "*.h5"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -w -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.53.2",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"python-bridge": "^1.1.0"
+	}
+}
