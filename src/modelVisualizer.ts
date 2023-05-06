@@ -230,9 +230,9 @@ export class ModelVisualizer implements vscode.CustomEditorProvider<ModelFile> {
 			return 'http://' + str(addr) + ':' + str(port)
 	`;
   // install deps while extension init
-	ModelVisualizer.python`install_deps()`
-	.then((res) => { console.log(res); })
-	.catch((err) => { console.log(err); });
+	ModelVisualizer.python`install_deps()`.then((res) => { 
+		console.log(res); 
+	});
 	
 	}
 
