@@ -1,6 +1,6 @@
 ![](docs/logo-v3.png)
 
-**netron-vscode-extension**: A vscode extension for netron, support *.pdmodel, *.nb, *.onnx, *.pb, *.h5, *.tflite, *.pth, *.pt, *.mnn, *.tnnproto, *.param, etc. This code is based on [NetronInVSCode](https://github.com/chingweihsu0809/NetronInVSCode) but adds more model format support(such as *.pdmodel, *.nb, *.mnn, *.param, *.tnnproto, etc.) and some new [Features](#Features). **NOTE: This extension is mainly for personal use, so the development plans are based on individual needs and may not have intensive plans in the future.**
+**netron-vscode-extension**: A vscode extension for netron, support *.pdmodel, *.nb, *.onnx, *.pb, *.h5, *.tflite, *.pth, *.pt, *.mnn, *.tnnproto, *.param, etc. This code is based on [NetronInVSCode](https://github.com/chingweihsu0809/NetronInVSCode) but adds more model format support (such as *.pdmodel, *.nb, *.mnn, *.param, *.tnnproto, etc.) and some new [Features](#Features). **NOTE: This extension is mainly for personal use, so the development plans are based on individual needs and may not have intensive plans in the future.**
 
 ## Features   
 <div id="Features"></div>  
