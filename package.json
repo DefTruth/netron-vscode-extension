@@ -1,8 +1,8 @@
 {
 	"name": "netron-vscode-extension",
 	"displayName": "netron-vscode-extension",
-	"description": "Implmentation of visualizing ML Models in VSCode using Netron",
-	"version": "0.0.2",
+	"description": "Visualizing ML/DL Models in VSCode using Netron",
+	"version": "0.0.3",
 	"publisher": "DefTruth",
 	"private": true,
 	"license": "MIT",
